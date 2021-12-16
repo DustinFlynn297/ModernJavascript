@@ -29,5 +29,5 @@ const books = [
 ]
 
 books.forEach(function(b){
-    console.log(books.title.toUpperCase());
+    console.log(books.title.toUpperCase())
 });
