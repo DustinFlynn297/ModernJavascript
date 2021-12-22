@@ -8,3 +8,23 @@ function sayHi(){
 const greet = function () {
     console.log(this)
 }
+
+const person = {
+    first: 'Cherilyn',
+    last: 'Sarkisian',
+    nickName: 'Cher',
+    
+    fullName(){
+        //adding destructuring
+        const {
+            first,
+            last,
+            nickName
+        } =this;
+        return `${first} ${last} AKA ${nickName}`;
+    },
+    printBio(){
+        const fullName = this.fullName();
+        console.log(`${fullName} is a person`)
+    }
+}
