@@ -24,7 +24,18 @@ const person = {
         return `${first} ${last} AKA ${nickName}`;
     },
     printBio(){
+        console.log(this);
         const fullName = this.fullName();
         console.log(`${fullName} is a person`)
+        
+    },
+    laugh: () => {
+        console.log(this);
+        console.log(`${this.nickName} says AHHAHAHA`)
     }
 }
+
+//Different invocations of "This"
+//Arrow functions do not get their own version of this.
+const printBio = person.printBio;
+
