@@ -12,6 +12,7 @@ const annoyer = {
     },
     stop() {
         clearInterval(this.timerId);
+        console.log("Phew THANK HEAVES THAT IS OVER!")
     }
 }
 
